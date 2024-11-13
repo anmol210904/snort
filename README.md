@@ -11,6 +11,12 @@ Welcome to the **Intrusion Detection System (IDS)** powered by Snort! This proje
 ## Project Overview
 This IDS project is tailored to detect multiple cyber attack vectors, reconnaissance attempts, and unauthorized access attempts. By using Snort, an open-source network intrusion prevention system (NIPS) and network intrusion detection system (NIDS), this system actively monitors network traffic for suspicious behavior and alerts the security team of potential threats.
 
+## Contributors
+
+- **Anmol**
+- **Chaman Rathore** 
+- **Daksh**
+
 ## Key Features
 - **Reconnaissance Detection**: Identifies port scanning, ping sweeps, and protocol fingerprinting.
 - **Injection Attack Detection**: SQL Injection (SQLi), Cross-Site Scripting (XSS), and Local File Inclusion (LFI) detection.
