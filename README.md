@@ -23,6 +23,23 @@ This IDS project is tailored to detect multiple cyber attack vectors, reconnaiss
 
 Here’s an overview of the Snort rules included, with code examples where applicable:
 
+
+
+These are some Screenshots of Some Examples:
+
+NULL SCAN
+![WhatsApp Image 2024-11-13 at 11 59 58 PM(2)](https://github.com/user-attachments/assets/2edb8f13-2b04-43ec-a5df-be265bca6468)
+
+ACK SCAN
+![WhatsApp Image 2024-11-13 at 11 59 58 PM(1)](https://github.com/user-attachments/assets/96a4d6f9-43f5-48aa-bd18-801deca2b0c4)
+
+SYN ACK SCAN
+![WhatsApp Image 2024-11-13 at 11 59 58 PM](https://github.com/user-attachments/assets/03ba022f-0d7f-4e4b-a3d4-0514aec7c8ec)
+
+
+
+
+
 ### 1. **Reconnaissance**
    - **HTTP OPTIONS Scan**: Detects HTTP OPTIONS method scans, commonly used in reconnaissance.
      ```snort
@@ -85,6 +102,7 @@ Here’s an overview of the Snort rules included, with code examples where appli
      alert tcp any any -> any any (msg:"Potential Xmas Tree scan"; flags: FPU; sid:100039;)
      ```
    - **SYN Scan**: Monitors abnormal SYN patterns, indicating SYN scan activity.
+
      ```snort
      alert tcp any any -> any any (msg:"Potential SYN scan"; flags:S; threshold:type both, track by_src, count 5, seconds 60; sid:100040;)
      ```
